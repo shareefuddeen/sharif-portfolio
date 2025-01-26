@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero{
+    background-image: url('./assets/Background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#root{
+    background-color:#2C2C34;
+    color: #E0E0E0;
+}
+.tech{
+    background-color: rgb(52, 52, 60) ;
+}
+.about-grid{
+     background-color: rgb(52, 52, 60) ;
+}
+#contact{
+    padding: 1px;
+    margin-top: 6em;
+    background-color: rgb(52, 52, 60) ;
+}
+.nav1 a:hover{
+    color: gray;
+}
+.button{
+    transition: 0.4s;
+}
+.images img{
+    transition: .6s;
+}
+.images img:hover{
+    transform: scale(2);
+}
+body{
+    overflow-x: hidden;
+}
+
+.project{
+    height:100vh;
+}
+.project>img{
+    margin: 24px;
+}
+
+.animate-from-right{
+    transform: translateX(90%);
+    transition:  0.5s ease;
+}
+.animate-from-right.show-animate{
+    transform: translateX(0);
+}
+.animate-from-left{
+    transform: translateX(-100%);
+    opacity: 0;
+    filter: blur(5px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.animate-from-left.show-animate{
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+}
+
+.form-text{
+    font-size: 1.4em;
+}
+.read-more{
+    transition:.4s;
+}
+.read-more:hover{
+    transform: scale(1.1);
+}
