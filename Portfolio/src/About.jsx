@@ -17,7 +17,7 @@ const About = () => {
   return (
     <section id='about'>
       <div className='my-22'>
-        <h1 className='text-4xl mb-6 tracking-widest font-extrabold mt-12 text-center bg-gradient-to-tr from-teal-500 to-teal-900 text-transparent bg-clip-text'>About me</h1>
+        <h1 className='text-3xl mb-6 tracking-widest font-extrabold mt-12 text-center bg-gradient-to-tr from-teal-500 to-teal-900 text-transparent bg-clip-text'>About me</h1>
         <div className='grid md:grid-cols-2 sm:grid-cols-1  align-items-center about-grid'>
           <InView triggerOnce={false} rootMargin="" threshold={threshold}>
             {({ inView, ref }) => (

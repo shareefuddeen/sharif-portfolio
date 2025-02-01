@@ -18,6 +18,7 @@ const Navbar = () => {
                     <li><Link to="services" className="text-white text-2xl hover:no-underline hover:border-b border-green-600  px-4 py-1 rounded-full transition duration-400 cursor-pointer" spy={true} smooth={true} offset={50} duration={400}>Services</Link></li>
                     <li><Link to="contact" className='text-white text-2xl hover:no-underline hover:border-b border-green-600  px-4 py-1 rounded-full transition duration-400 cursor-pointer ' spy={true} smooth={true} offset={50} duration={400}>Contact</Link></li>
                     <li><Link to="project" className='text-white text-2xl hover:no-underline hover:border-b border-green-600  px-4 py-1 rounded-full transition duration-400 cursor-pointer ' spy={true} smooth={true} offset={50} duration={400}>Projects</Link></li>
+                    <li><Link to="technology" className='text-white text-2xl hover:no-underline hover:border-b border-green-600  px-4 py-1 rounded-full transition duration-400 cursor-pointer ' spy={true} smooth={true} offset={-160} duration={400}>Techology</Link></li>
                     <li><Link to="about" className='text-white text-2xl hover:no-underline hover:border-b border-green-600 px-4 py-1 rounded-full transition duration-400 cursor-pointer'spy={true} smooth={true} offset={50} duration={400}>About</Link></li>
                 </ul>
              
@@ -29,7 +30,8 @@ const Navbar = () => {
                         <li><Link onClick={()=>setisOpen(!isOpen)} to="services" className="text-white text-2xl hover:no-underline hover:bg-gray-600 px-6 block transition duration-500 cursor-pointer" spy={true} smooth={true} offset={50} duration={500} >Services</Link></li>
                         <li><Link onClick={()=>setisOpen(!isOpen)} to="contact" className='text-white text-2xl hover:no-underline hover:bg-gray-600 px-6 block transition duration-500 cursor-pointer'spy={true} smooth={true} offset={50} duration={500} >Contact</Link></li>
                         <li><Link onClick={()=>setisOpen(!isOpen)} to="about" className='text-white text-2xl hover:no-underline hover:bg-gray-600 px-6 block transition duration-500 cursor-pointer' spy={true} smooth={true} offset={50} duration={500}>About</Link></li>
-                        <li><Link onClick={()=>setisOpen(!isOpen)} to="project" className='text-white text-2xl hover:no-underline hover:bg-gray-600 px-6 block transition duration-500 cursor-pointer' spy={true} smooth={true} offset={50} duration={400}>Projects</Link></li>
+                        <li><Link onClick={()=>setisOpen(!isOpen)} to="technology" className='text-white text-2xl hover:no-underline hover:bg-gray-600 px-6 block transition duration-500 cursor-pointer' spy={true} smooth={true} offset={50} duration={400}>Projects</Link></li>
+                        <li><Link onClick={()=>setisOpen(!isOpen)} to="project" className='text-white text-2xl hover:no-underline hover:bg-gray-600 px-6 block transition duration-500 cursor-pointer' spy={true} smooth={true} offset={-160} duration={400}>Technology</Link></li>
                     </ul>
                 </div>
             )}

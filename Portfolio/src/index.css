@@ -74,3 +74,21 @@ body{
 .read-more:hover{
     transform: scale(1.1);
 }
+.tech-images{
+    animation-name: upDown;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes upDown{
+    0%{
+        top: 42px;
+    }
+    50%{
+        top: 16px;
+    }
+    100%{
+        top: 42px;
+    }
+}

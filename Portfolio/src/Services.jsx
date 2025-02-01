@@ -19,7 +19,7 @@ const Services = () => {
     return (
         <section id="services">
             <div className="p-10 mt-4 mx-auto">
-                <h2 className="text-4xl tracking-widest font-extrabold text-center bg-gradient-to-tr from-teal-500 to-teal-900 text-transparent bg-clip-text mt-12 mb-12">
+                <h2 className="text-3xl tracking-widest font-extrabold text-center bg-gradient-to-tr from-teal-500 to-teal-900 text-transparent bg-clip-text mt-12 mb-12">
                     Services
                 </h2>
                 <p className="mx-2 mt-2 text-center text-gray-300 text-lg tracking-wider">

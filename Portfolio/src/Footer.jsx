@@ -13,11 +13,12 @@ const Footer =()=>{
 		<div className='flex justify-center align-items-center p-4 shadow-md mt-22'>
 			<div className='flex-col '>
 			<div>
-				<ul className='flex flex-row space-x-20 justify-center items-center '>
+				<ul className='flex flex-row space-x-8 md:space-x-20 justify-center items-center '>
 					<li><Link spy={true} smooth={true} offset={50} duration={400} className='text-white text-xl transition duration-500 cursor-pointer hover:border-b pb-2' to='about'>About me</Link></li>
 					<li><Link spy={true} smooth={true} offset={50} duration={400} className='text-white text-xl transition duration-500 cursor-pointer hover:border-b pb-2' to='project'>Projects</Link></li>
 					<li><Link spy={true} smooth={true} offset={50} duration={400} className='text-white text-xl transition duration-500 cursor-pointer hover:border-b pb-2' to='contact'>Contact</Link></li>
 					<li><Link spy={true} smooth={true} offset={50} duration={400} className='text-white text-xl transition duration-500 cursor-pointer hover:border-b pb-2' to='services'>Services</Link></li>
+					<li><Link spy={true} smooth={true} offset={-160} duration={400} className='text-white text-xl transition duration-500 cursor-pointer hover:border-b pb-2' to='technology'>Technology</Link></li>
 				</ul>
 				</div>
 			 	<div className='flex justify-center space-x-10 align-items-center space-y-4'>

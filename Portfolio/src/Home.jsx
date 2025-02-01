@@ -7,9 +7,10 @@ import instgram from './assets/icons/instagram-svgrepo-com.png';
 import linkIdn from './assets/icons/linkedin-svgrepo-com.png';
 import tiktok from './assets/icons/tiktok-svgrepo-com.png';
 import whatsApp from './assets/icons/whatsapp-svgrepo-com.png';
-import Project from './project';
+import Project from './Project';
 import Contact from './Contact';
 import Footer from './Footer';
+import Technology from './Technology';
 
 
 const Home = () => {
@@ -39,6 +40,7 @@ const Home = () => {
         
         <About/>
         <Services/>
+        <Technology/>
         <Project/>
         <Contact/>
         <Footer/>
