@@ -7,8 +7,8 @@ const Contact = () => {
     return <p>Thanks for joining!</p>;
   }
   return (
-    <section id='contact'>
-      <h1 className='text-3xl tracking-widest font-extrabold mt-44 mb-14 z-index-1 text-center bg-gradient-to-tr from-teal-500 to-teal-900 text-transparent bg-clip-text'>Contact</h1>
+    <section id='contact' >
+      <h1 className='text-3xl tracking-widest font-extrabold mt-44 mb-14 z-index-1 text-center text-yellow-500'>Contact</h1>
       <div className=' flex flex-col md:flex-row align-items-center justify-center container '>
         <div className='w-full form-text text-gray-300 leading-9'>
           <p>Fill the form to send <br></br>me a message through E-mail or<br></br> contact me through my phone number <br></br> <strong>0593628367 or 0204785887</strong></p>
@@ -44,10 +44,10 @@ const Contact = () => {
                 errors={state.errors}
               />
 
-              <input type="submit" disabled={state.submitting} className='btn btn-info btn-block btn-md mt-4' value="Submit" />
+              <input type="submit" disabled={state.submitting} className='btn bg-yellow-500 btn-block btn-md mt-4' value="Submit" />
 
-              <a href="#" ><p className='text-center '>Or contact me on whatsApp <br />@0593628367 </p></a>
             </div>
+              <a href="https://wa.me/qr/UTV5UQGMOP3OG1" ><p className='mx-auto inline  '>Or contact me on whatsApp <br />@0593628367 </p></a>
           </form>
         </div>
       </div>

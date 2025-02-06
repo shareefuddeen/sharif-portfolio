@@ -11,6 +11,7 @@ import Project from './Project';
 import Contact from './Contact';
 import Footer from './Footer';
 import Technology from './Technology';
+import { Link } from 'react-scroll';
 
 
 const Home = () => {
@@ -33,7 +34,7 @@ const Home = () => {
                     <a href="https://vm.tiktok.com/ZMk9sfkrE/"><img width={24} height={22}src={tiktok} alt="tiktok" /></a>
                 </div>
                 <div className='flex justify-center'>
-                    <button className='outline outline-1 outline-white py-2 px-8 rounded-full text-lg hover:outline-teal-800 button'>contact Me</button>
+                    <Link to="contact" className='cursor-pointer outline outline-1 no-underline hover:no-underline text-white  py-2 px-8 rounded-full text-lg hover:outline-yellow-500 button' spy={true} smooth={true} offset={-50} duration={400}>Contact us</Link>
                 </div>
             </div>
         </section>

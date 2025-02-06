@@ -8,18 +8,18 @@ import fullstack from './assets/icons/icons8-google-code-50.png';
 
 const Services = () => {
 
-      const screenWidth = window.innerWidth;
-  let threshold;
+    const screenWidth = window.innerWidth;
+    let threshold;
 
-  if (screenWidth <= 768) {
-    threshold = 0.1;
-  } else {
-    threshold = 0.5;
-  }
+    if (screenWidth <= 768) {
+        threshold = 0.1;
+    } else {
+        threshold = 0.5;
+    }
     return (
         <section id="services">
-            <div className="p-10 mt-4 mx-auto">
-                <h2 className="text-3xl tracking-widest font-extrabold text-center bg-gradient-to-tr from-teal-500 to-teal-900 text-transparent bg-clip-text mt-12 mb-12">
+            <div className="p-10 mt-4 mx-auto font-sans">
+                <h2 className="text-3xl tracking-wimono font-extrabold text-center text-yellow-500 mt-12 mb-12">
                     Services
                 </h2>
                 <p className="mx-2 mt-2 text-center text-gray-300 text-lg tracking-wider">
@@ -28,9 +28,9 @@ const Services = () => {
                 <div className='flex flex-col md:flex-row gap-14 md:gap-4'>
                     <InView triggerOnce={false} threshold={threshold}>
                         {({ inView, ref }) => (
-                            <div ref={ref} className={`animate-from-right tech w-1/2 md:w-full mx-auto hover:bg-green-200  hover:text-green-800 transition duration-500 rounded-lg p-2 text-gray-300 text-center tracking-wide leading-6 ${inView ? 'show-animate' : ''}`}>
+                            <div ref={ref} className={`animate-from-right tech w-1/2 md:w-full mx-auto hover:bg-yellow-200  hover:text-green-800 transition duration-500 rounded-lg p-2 text-gray-300 text-center tracking-wide leading-6 ${inView ? 'show-animate' : ''}`}>
                                 <img className="mx-auto" width={62} height={55} src={frontend} alt="frontend" />
-                                <h4 className="font-sans font-extrabold tracking-wider text-2xl bg-gradient-to-tr from-teal-500 to-teal-900 text-transparent bg-clip-text">
+                                <h4 className="font-mono font-extrabold tracking-wider text-2xl text-yellow-500">
                                     Front-End Development
                                 </h4>
                                 <p className="font-semibold">
@@ -40,9 +40,9 @@ const Services = () => {
                         )}
                     </InView>
 
-                    <div className="tech w-1/2 md:w-full mx-auto hover:bg-green-200 hover:text-green-800 transition duration-500 rounded-lg p-2 text-gray-300 text-center tracking-wide leading-6" >
+                    <div className="tech w-1/2 md:w-full mx-auto hover:bg-yellow-200 hover:text-green-800 transition duration-500 rounded-lg p-2 text-gray-300 text-center tracking-wide leading-6" >
                         <img className="mx-auto" width={62} height={55} src={fullstack} alt="fullstack" />
-                        <h4 className="font-sans font-extrabold tracking-wider text-2xl bg-gradient-to-tr from-teal-500 to-teal-900 text-transparent bg-clip-text">
+                        <h4 className="font-mono font-extrabold tracking-wider text-2xl text-yellow-500">
                             Full-Stack Web Development
                         </h4>
                         <p className="font-semibold">
@@ -51,9 +51,9 @@ const Services = () => {
                     </div>
                     <InView triggerOnce={false} threshold={threshold}>
                         {({ inView, ref }) => (
-                            <div ref={ref} className={`animate-from-left tech w-1/2 md:w-full mx-auto hover:bg-green-200  hover:text-green-800 transition duration-500 rounded-lg p-2 text-gray-300 text-center tracking-wide leading-6 ${inView ? 'show-animate' : ''}`}>
-                                <img className="mx-auto" width={62} height={55} src={backend} alt="backend" />
-                                <h4 className="font-sans font-extrabold tracking-wider text-2xl bg-gradient-to-tr from-teal-500 to-teal-900 text-transparent bg-clip-text">
+                            <div ref={ref} className={`animate-from-left tech w-1/2 md:w-full mx-auto hover:bg-yellow-200  hover:text-green-800 transition duration-500 rounded-lg p-2 text-gray-300 text-center tracking-wide leading-6 ${inView ? 'show-animate' : ''}`}>
+                                <img className="mx-auto" width={62} height={55} src={frontend} alt="frontend" />
+                                <h4 className="font-mono font-extrabold tracking-wider text-2xl text-yellow-500">
                                     Back-End Development
                                 </h4>
                                 <p className="font-semibold">
@@ -67,9 +67,9 @@ const Services = () => {
                 <div className="flex md:flex-row flex-col gap-14 md:gap-4 mt-4">
                     <InView triggerOnce={false} threshold={threshold}>
                         {({ inView, ref }) => (
-                            <div ref={ref} className={`animate-from-right tech  w-1/2 md:w-full mx-auto hover:bg-green-200 hover:text-green-800 transition duration-500 rounded-lg p-2 text-gray-300 text-center tracking-wide leading-6 ${inView ? 'show-animate' : ''}`}>
+                            <div ref={ref} className={`animate-from-right tech  w-1/2 md:w-full mx-auto hover:bg-yellow-200 hover:text-green-800 transition duration-500 rounded-lg p-2 text-gray-300 text-center tracking-wide leading-6 ${inView ? 'show-animate' : ''}`}>
                                 <img className="mx-auto" width={62} height={55} src={ecommerce} alt="ecommerce" />
-                                <h4 className="font-sans font-extrabold tracking-wider text-2xl bg-gradient-to-tr from-teal-500 to-teal-900 text-transparent bg-clip-text">
+                                <h4 className="font-mono font-extrabold tracking-wider text-2xl text-yellow-500">
                                     E-Commerce Solutions
                                 </h4>
                                 <p className="font-semibold">
@@ -82,9 +82,9 @@ const Services = () => {
 
                     <InView triggerOnce={false} threshold={threshold}>
                         {({ inView, ref }) => (
-                            <div ref={ref} className={`animate-from-left tech w-1/2 md:w-full mx-auto hover:bg-green-200 hover:text-green-800 transition duration-500 rounded-lg p-2 text-gray-300 text-center tracking-wide leading-6 ${inView ? 'show-animate' : ''}`}>
+                            <div ref={ref} className={`animate-from-left tech w-1/2 md:w-full mx-auto hover:bg-yellow-200 hover:text-green-800 transition duration-500 rounded-lg p-2 text-gray-300 text-center tracking-wide leading-6 ${inView ? 'show-animate' : ''}`}>
                                 <img className="mx-auto" width={62} height={55} src={webopt} alt="webopt" />
-                                <h4 className="font-sans font-extrabold tracking-wider text-2xl bg-gradient-to-tr from-teal-500 to-teal-900 text-transparent bg-clip-text">
+                                <h4 className="font-mono font-extrabold tracking-wider text-2xl text-yellow-500">
                                     Website Maintenance and Optimization
                                 </h4>
                                 <p className="font-semibold">

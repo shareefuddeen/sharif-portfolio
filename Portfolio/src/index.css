@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .hero{
     background-image: url('./assets/Background.jpg');
     background-position: center;
@@ -12,8 +13,8 @@
     background-color:#2C2C34;
     color: #E0E0E0;
 }
-.tech{
-    background-color: rgb(52, 52, 60) ;
+#technology, .tech{
+    background-color:rgb(52, 52, 60);
 }
 .about-grid{
      background-color: rgb(52, 52, 60) ;
@@ -69,26 +70,45 @@ body{
     font-size: 1.4em;
 }
 .read-more{
-    transition:.4s;
+    transition:.6s;
+}
+.aniamted{
+    animation-duration: 50s;
 }
 .read-more:hover{
     transform: scale(1.1);
 }
-.tech-images{
-    animation-name: upDown;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    position: relative;
+.techImage{
+animation: upDown 60s infinite linear;
 }
 
+
+.blocks {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+  }
+
 @keyframes upDown{
-    0%{
-        top: 42px;
+    from{
+        transform: rotateZ(0deg);
     }
-    50%{
-        top: 16px;
-    }
-    100%{
-        top: 42px;
+    to{
+        transform: rotateZ(359deg);
     }
 }
+
+@keyframes appear {
+    from {
+      opacity: 0;
+      scale: 0.5;
+      filter: blur(5);
+    }
+  
+    to {
+      opacity: 1;
+      scale: 1;
+      filter: blur(0);
+    }
+  }
+  
