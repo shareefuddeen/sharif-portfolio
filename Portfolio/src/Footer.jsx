@@ -8,7 +8,7 @@ import { Link } from 'react-scroll';
 
 const Footer = () => {
 	return (
-		<section id='footer' className=''>
+		<section id='footer' className='bg-gray-900'>
 			<div className='flex justify-center align-items-center p-4 shadow-md '>
 				<div className='flex-col '>
 					<div>

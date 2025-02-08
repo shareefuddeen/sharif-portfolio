@@ -24,13 +24,13 @@ const About = () => {
           <InView triggerOnce={false} rootMargin="" threshold={threshold}>
             {({ inView, ref }) => (
               <div ref={ref} className={`about-image mx-auto animate-from-right  ${inView ? 'show-animate' : ''}`}>
-                <img src={sharif} className='w-1/2 h-1 lg:w-full lg:h-full' alt='about-image' />
+                <img src={sharif} className='w-3/4 h-3/4 mx-auto lg:mx-0 lg:w-full lg:h-full' alt='about-image' />
               </div>
             )}
           </InView>
 
           <div className='mx-auto  text-left p-4'>
-            <p className='text-xl text-gray-300 tracking-widest leading-8'><span className='text-4xl leading-8 tracking-widest font-extrabold text-center text-yellow-500'>Hi, I'm Sharif,</span><br />{isExpanded ? text : `${text.substring(0, 183)}...`}</p>
+            <p className='text-xl text-gray-300 tracking-widest leading-8'><span className='text-4xl leading-8 tracking-widest font-extrabold text-center text-yellow-500'>Hi, I'm ShaRif,</span><br />{isExpanded ? text : `${text.substring(0, 183)}...`}</p>
             <button onClick={() => setIsExpanded(!isExpanded)} className='read-more text-white focus:outline-none bg-none border-2 border-yellow-500 hover:bg-yellow-500 hover:font-bold px-3 py-2 rounded-xl'>{isExpanded ? 'Read less' : 'Read more'}</button>
           </div>
         </div>
@@ -40,16 +40,16 @@ const About = () => {
         <div>
           <img src={img1} alt="image 2" className='rounded-md' />
         </div>
-        <div className='text-yellow-200 my-6 lg:my-0'>
-          <h1 className='font-mono'>Different Languages and <br />Frameworks?</h1>
-          <p className='font-sans text-xl tracking-wider'>No problem. I can adapt to any Framework within a short <br />period as short as one week to be able to get <br />my hands fully working.</p>
+        <div className=' my-6 lg:my-0'>
+          <h1 className='font-mono text-yellow-500'>Different Languages and <br />Frameworks?</h1>
+          <p className='font-sans text-xl tracking-wider font-bold'>No problem. I can adapt to any Framework within a short <br />period as short as one week to be able to get <br />my hands fully working.</p>
         </div>
       </div>
       <div className='flex flex-col lg:flex-row justify-center align-items-center mt-16 p-4 space-x-16 blocks'>
         
-        <div className='text-yellow-200 my-6 lg:my-0'>
-          <h1 className='font-mono'>Software Engineering </h1>
-          <p className='font-sans text-xl tracking-wider'>As a software engineer and web developer, <br /> I specialize in designing and developing<br /> high-performance, scalable, and user-friendly <br />applications.</p>
+        <div className='my-6 lg:my-0'>
+          <h1 className='font-mono text-yellow-500'>Software Engineering </h1>
+          <p className='font-sans text-xl tracking-wider font-bold'>As a software engineer and web developer, <br /> I specialize in designing and developing<br /> high-performance, scalable, and user-friendly <br />applications.</p>
         </div>
         <div>
           <img src={img2} className='rounded-md object-center relative right-7 lg:right-0' alt="image 2" />

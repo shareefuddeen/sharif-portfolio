@@ -21,10 +21,10 @@ const Home = () => {
                 <Navbar />
                 <div className='mt-40'>
                     <p className='text-2xl text-center font-serif'>
-                        Welcome
+                        Welcome !
                     </p>
-                    <h1 className='text-6xl font-extrabold mt-4 text-center font-mono'>I am a developer|</h1>
-                    <p className='text-xl mt-8 text-center mx-4 font-sans tracking-wider'>Technology is a tool of endless creativity, empowering us to learn, build, and innovate every day.</p>
+                    <h1 className='text-6xl font-extrabold mt-4 text-center font-mono text-yellow-500'>I am a developer|</h1>
+                    <p className='text-xl mt-8 text-center mx-4 font-sans tracking-wider '>Technology is a tool of endless creativity, empowering us to learn, build, and innovate every day.</p>
                 </div>
                 <div className='flex images justify-center  my-5 space-x-6'>
                     <a href="https://www.facebook.com/profile.php?id=100090095863256"><img width={11}  height={6} src={facebook} alt="facebook" /></a>

@@ -7,7 +7,7 @@ const Contact = () => {
     return <p>Thanks for joining!</p>;
   }
   return (
-    <section id='contact' >
+    <section id='contact' className='pb-4'>
       <h1 className='text-3xl tracking-widest font-extrabold mt-44 mb-14 z-index-1 text-center text-yellow-500'>Contact</h1>
       <div className=' flex flex-col md:flex-row align-items-center justify-center container '>
         <div className='w-full form-text text-gray-300 leading-9'>
