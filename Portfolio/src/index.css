@@ -4,8 +4,9 @@
 
 
 .hero{
+    background-image: url('./assets/vecteezy_blue-watercolor-stain-watercolor-background_21971442.png');
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 #root{

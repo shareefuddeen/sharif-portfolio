@@ -10,6 +10,7 @@
     },
     "dependencies": {
         "@formspree/react": "^2.5.1",
+        "@vercel/speed-insights": "^1.1.0",
         "axios": "^1.7.2",
         "bootstrap": "^5.3.3",
         "react": "^18.2.0",

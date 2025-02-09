@@ -16,7 +16,7 @@ import { Link } from 'react-scroll';
 
 const Home = () => {
     return (<>
-        <section className='hero animate'>
+        <section className='hero animate text-white'>
             <div className='hero h-screen md:h-screen  '>
                 <Navbar />
                 <div className='mt-40'>
