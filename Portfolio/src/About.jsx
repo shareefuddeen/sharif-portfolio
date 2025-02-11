@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { InView } from 'react-intersection-observer';
 import sharif from './assets/About me.jpg';
 import img1 from './assets/9190d5591e405abe5bdbb9f3d1018ecb.jpg';
 import img2 from './assets/a633af67a4393c596a9e0a02e1fe66f5.jpg'
@@ -21,13 +20,10 @@ const About = () => {
       <div className='my-22'>
         <h1 className='text-3xl mb-6 tracking-widest font-extrabold mt-12 text-center text-yellow-500'>About me</h1>
         <div className='flex flex-col lg:flex-row  align-items-center about-grid'>
-          <InView triggerOnce={false} rootMargin="" threshold={threshold}>
-            {({ inView, ref }) => (
-              <div ref={ref} className={`about-image mx-auto animate-from-right  ${inView ? 'show-animate' : ''}`}>
-                <img src={sharif} className='w-3/4 h-3/4 mx-auto lg:mx-0 lg:w-full lg:h-full' alt='about-image' />
-              </div>
-            )}
-          </InView>
+
+          <div className>
+            <img src={sharif} className='w-3/4 h-3/4 mx-auto lg:mx-0 lg:w-full lg:h-full' alt='about-image' />
+          </div>
 
           <div className='mx-auto  text-left p-4'>
             <p className='text-xl text-gray-300 tracking-widest leading-8'><span className='text-4xl leading-8 tracking-widest font-extrabold text-center text-yellow-500'>Hi, I'm ShaRif,</span><br />{isExpanded ? text : `${text.substring(0, 183)}...`}</p>
@@ -35,26 +31,23 @@ const About = () => {
           </div>
         </div>
       </div>
+      <div className='mt-12 mx-4'>
+        <div className='blocks p-4 flex flex-col lg:flex-row text-center md:text-start align-items-center justify-center'>
+          <img src={img1} className='rounded-md mx-auto' alt="diffferent languages" />
+          <div>
+            <h1 className='font-mono text-yellow-500 '>Different Languages and <br />Frameworks? </h1>
+            <p className='font-sans text-xl tracking-wider font-bold'>No problem. I can adapt to any Framework within a shorter period as short as one week to be able to get my hands fully working.</p>
+          </div>
+        </div>
+        <div className='blocks p-4 mt-20 flex flex-col lg:flex-row text-center align-items-center justify-center'>
+          <div>
+            <h1 className='font-mono text-yellow-500 '>Software Engineering </h1>
+            <p className='font-sans text-xl tracking-wider  font-bold'>As a software engineer and web developer, I specialize in designing and developing high-performance, scalable, and user-friendly applications.</p>
+          </div>
+          <img src={img2} className='mx-auto rounded-md w-1/2 h-1/2' alt="Software engineering" />
+        </div>
+      </div>
 
-      <div className='flex flex-col lg:flex-row justify-center align-items-center p-4 mt-24 space-x-16 blocks'>
-        <div>
-          <img src={img1} alt="image 2" className='rounded-md' />
-        </div>
-        <div className=' my-6 lg:my-0'>
-          <h1 className='font-mono text-yellow-500'>Different Languages and <br />Frameworks?</h1>
-          <p className='font-sans text-xl tracking-wider font-bold'>No problem. I can adapt to any Framework within a short <br />period as short as one week to be able to get <br />my hands fully working.</p>
-        </div>
-      </div>
-      <div className='flex flex-col lg:flex-row justify-center align-items-center mt-16 p-4 space-x-16 blocks'>
-        
-        <div className='my-6 lg:my-0'>
-          <h1 className='font-mono text-yellow-500'>Software Engineering </h1>
-          <p className='font-sans text-xl tracking-wider font-bold'>As a software engineer and web developer, <br /> I specialize in designing and developing<br /> high-performance, scalable, and user-friendly <br />applications.</p>
-        </div>
-        <div>
-          <img src={img2} className='rounded-md object-center relative right-7 lg:right-0' alt="image 2" />
-        </div>
-      </div>
     </section>
 
   )
