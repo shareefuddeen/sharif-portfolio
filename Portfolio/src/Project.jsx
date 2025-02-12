@@ -10,7 +10,7 @@ const Project = () => {
             <InView triggerOnce={false} threshold={0.01}>
                 {({ inView, ref }) => (
                     <div ref={ref} className={`animate-from-right w-1/2 md:w-full mx-auto transition duration-500 rounded-lg p-2 text-gray-300 text-center tracking-wide leading-6 ${inView ? 'show-animate' : ''}`}>
-                        <img src={project} className='mx-auto rounded-md w-3/4 h-3/4' alt='Project' />
+                        <img loading='lazy' src={project} className='mx-auto rounded-md w-3/4 h-3/4' alt='Project' />
                     </div>
                 )}
             </InView>

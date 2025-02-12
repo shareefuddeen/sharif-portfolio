@@ -10,7 +10,7 @@ const Navbar = () => {
                 <h2 className='font-sans mb-3 '>codeRif</h2>
                 <button className='focus:outline-none' onClick={()=>setisOpen(!isOpen)} >
                     {isOpen? ( <span className='text-3xl text-black'>X</span> ):(
-                        <img src={menu} width={22} height={22} alt="menu" className='flex mb-3 lg:hidden'/>
+                        <img loading='lazy' src={menu} width={22} height={22} alt="menu" className='flex mb-3 lg:hidden'/>
                     )}
                 </button>
                 {/* wider screen */}

@@ -29,7 +29,7 @@ const Services = () => {
                     <InView triggerOnce={false} threshold={threshold}>
                         {({ inView, ref }) => (
                             <div ref={ref} className={`animate-from-right tech w-1/2 md:w-full mx-auto hover:bg-yellow-200  hover:text-green-800 transition duration-500 rounded-lg p-2 text-gray-300 text-center tracking-wide leading-6 ${inView ? 'show-animate' : ''}`}>
-                                <img className="mx-auto" width={62} height={55} src={frontend} alt="frontend" />
+                                <img loading='lazy' className="mx-auto" width={62} height={55} src={frontend} alt="frontend" />
                                 <h4 className="font-mono font-extrabold tracking-wider text-2xl text-yellow-500">
                                     Front-End Development
                                 </h4>
@@ -41,7 +41,7 @@ const Services = () => {
                     </InView>
 
                     <div className="tech w-1/2 md:w-full mx-auto hover:bg-yellow-200 hover:text-green-800 transition duration-500 rounded-lg p-2 text-gray-300 text-center tracking-wide leading-6" >
-                        <img className="mx-auto" width={62} height={55} src={fullstack} alt="fullstack" />
+                        <img loading='lazy' className="mx-auto" width={62} height={55} src={fullstack} alt="fullstack" />
                         <h4 className="font-mono font-extrabold tracking-wider text-2xl text-yellow-500">
                             Full-Stack Web Development
                         </h4>
@@ -52,7 +52,7 @@ const Services = () => {
                     <InView triggerOnce={false} threshold={threshold}>
                         {({ inView, ref }) => (
                             <div ref={ref} className={`animate-from-left tech w-1/2 md:w-full mx-auto hover:bg-yellow-200  hover:text-green-800 transition duration-500 rounded-lg p-2 text-gray-300 text-center tracking-wide leading-6 ${inView ? 'show-animate' : ''}`}>
-                                <img className="mx-auto" width={62} height={55} src={frontend} alt="frontend" />
+                                <img loading='lazy' className="mx-auto" width={62} height={55} src={frontend} alt="frontend" />
                                 <h4 className="font-mono font-extrabold tracking-wider text-2xl text-yellow-500">
                                     Back-End Development
                                 </h4>
@@ -68,7 +68,7 @@ const Services = () => {
                     <InView triggerOnce={false} threshold={threshold}>
                         {({ inView, ref }) => (
                             <div ref={ref} className={`animate-from-right tech  w-1/2 md:w-full mx-auto hover:bg-yellow-200 hover:text-green-800 transition duration-500 rounded-lg p-2 text-gray-300 text-center tracking-wide leading-6 ${inView ? 'show-animate' : ''}`}>
-                                <img className="mx-auto" width={62} height={55} src={ecommerce} alt="ecommerce" />
+                                <img loading='lazy' className="mx-auto" width={62} height={55} src={ecommerce} alt="ecommerce" />
                                 <h4 className="font-mono font-extrabold tracking-wider text-2xl text-yellow-500">
                                     E-Commerce Solutions
                                 </h4>
@@ -83,7 +83,7 @@ const Services = () => {
                     <InView triggerOnce={false} threshold={threshold}>
                         {({ inView, ref }) => (
                             <div ref={ref} className={`animate-from-left tech w-1/2 md:w-full mx-auto hover:bg-yellow-200 hover:text-green-800 transition duration-500 rounded-lg p-2 text-gray-300 text-center tracking-wide leading-6 ${inView ? 'show-animate' : ''}`}>
-                                <img className="mx-auto" width={62} height={55} src={webopt} alt="webopt" />
+                                <img loading='lazy' className="mx-auto" width={62} height={55} src={webopt} alt="webopt" />
                                 <h4 className="font-mono font-extrabold tracking-wider text-2xl text-yellow-500">
                                     Website Maintenance and Optimization
                                 </h4>

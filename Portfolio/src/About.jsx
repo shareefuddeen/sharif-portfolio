@@ -22,7 +22,7 @@ const About = () => {
         <div className='flex flex-col lg:flex-row  align-items-center about-grid'>
 
           <div className>
-            <img src={sharif} className='w-3/4 h-3/4 mx-auto lg:mx-0 lg:w-full lg:h-full' alt='about-image' />
+            <img loading='lazy' src={sharif} className='w-3/4 h-3/4 mx-auto lg:mx-0 lg:w-full lg:h-full' alt='about-image' />
           </div>
 
           <div className='mx-auto  text-left p-4'>
@@ -33,7 +33,7 @@ const About = () => {
       </div>
       <div className='mt-12 mx-4'>
         <div className='blocks p-4 flex flex-col lg:flex-row text-center md:text-start align-items-center justify-center'>
-          <img src={img1} className='rounded-md mx-auto' alt="diffferent languages" />
+          <img loading='lazy' src={img1} className='rounded-md mx-auto' alt="diffferent languages" />
           <div>
             <h1 className='font-mono text-yellow-500 '>Different Languages and <br />Frameworks? </h1>
             <p className='font-sans text-xl tracking-wider font-bold'>No problem. I can adapt to any Framework within a shorter period as short as one week to be able to get my hands fully working.</p>
@@ -44,7 +44,7 @@ const About = () => {
             <h1 className='font-mono text-yellow-500 '>Software Engineering </h1>
             <p className='font-sans text-xl tracking-wider  font-bold'>As a software engineer and web developer, I specialize in designing and developing high-performance, scalable, and user-friendly applications.</p>
           </div>
-          <img src={img2} className='mx-auto rounded-md w-1/2 h-1/2' alt="Software engineering" />
+          <img loading='lazy' src={img2} className='mx-auto rounded-md w-1/2 h-1/2' alt="Software engineering" />
         </div>
       </div>
 
