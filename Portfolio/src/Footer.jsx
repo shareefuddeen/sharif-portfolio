@@ -12,7 +12,7 @@ const Footer = () => {
 			<div className='flex justify-center align-items-center p-4 shadow-md '>
 				<div className='flex-col '>
 					<div>
-						<ul className='flex flex-row mt-12 space-x-8 md:space-x-20 justify-center items-center '>
+						<ul className='flex flex-row mt-12 space-x-4 md:space-x-20 justify-center items-center '>
 							<li><Link spy={true} smooth={true} offset={50} duration={400} className='text-white text-xl transition duration-500 cursor-pointer hover:border-b pb-2' to='about'>About me</Link></li>
 							<li><Link spy={true} smooth={true} offset={50} duration={400} className='text-white text-xl transition duration-500 cursor-pointer hover:border-b pb-2' to='project'>Projects</Link></li>
 							<li><Link spy={true} smooth={true} offset={50} duration={400} className='text-white text-xl transition duration-500 cursor-pointer hover:border-b pb-2' to='contact'>Contact</Link></li>
@@ -34,7 +34,7 @@ const Footer = () => {
 					
 				</div>
 			</div>
-					<p className='text-center p-8 bg-gray-800'>&copy;2025 codeRif. All Rights Reserved</p>
+					<p className='text-center p-8 m-0 bg-gray-800'>&copy;2025 codeRif. All Rights Reserved</p>
 		</section>
 	)
 }

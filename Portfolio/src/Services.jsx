@@ -28,7 +28,7 @@ const Services = () => {
                 <div className='flex flex-col md:flex-row gap-14 md:gap-4'>
                     <InView triggerOnce={false} threshold={threshold}>
                         {({ inView, ref }) => (
-                            <div ref={ref} className={`animate-from-right tech w-1/2 md:w-full mx-auto hover:bg-yellow-200  hover:text-green-800 transition duration-500 rounded-lg p-2 text-gray-300 text-center tracking-wide leading-6 ${inView ? 'show-animate' : ''}`}>
+                            <div ref={ref} className={`animate-from-right tech md:w-1/2 w-full mx-auto hover:bg-yellow-200  hover:text-green-800 transition duration-500 rounded-lg p-2 text-gray-300 text-center tracking-wide leading-6 ${inView ? 'show-animate' : ''}`}>
                                 <img loading='lazy' className="mx-auto" width={62} height={55} src={frontend} alt="frontend" />
                                 <h4 className="font-mono font-extrabold tracking-wider text-2xl text-yellow-500">
                                     Front-End Development
@@ -40,7 +40,7 @@ const Services = () => {
                         )}
                     </InView>
 
-                    <div className="tech w-1/2 md:w-full mx-auto hover:bg-yellow-200 hover:text-green-800 transition duration-500 rounded-lg p-2 text-gray-300 text-center tracking-wide leading-6" >
+                    <div className="tech md:w-1/2 w-full mx-auto hover:bg-yellow-200 hover:text-green-800 transition duration-500 rounded-lg p-2 text-gray-300 text-center tracking-wide leading-6" >
                         <img loading='lazy' className="mx-auto" width={62} height={55} src={fullstack} alt="fullstack" />
                         <h4 className="font-mono font-extrabold tracking-wider text-2xl text-yellow-500">
                             Full-Stack Web Development
@@ -51,7 +51,7 @@ const Services = () => {
                     </div>
                     <InView triggerOnce={false} threshold={threshold}>
                         {({ inView, ref }) => (
-                            <div ref={ref} className={`animate-from-left tech w-1/2 md:w-full mx-auto hover:bg-yellow-200  hover:text-green-800 transition duration-500 rounded-lg p-2 text-gray-300 text-center tracking-wide leading-6 ${inView ? 'show-animate' : ''}`}>
+                            <div ref={ref} className={`animate-from-left tech md:w-1/2 w-full mx-auto hover:bg-yellow-200  hover:text-green-800 transition duration-500 rounded-lg p-2 text-gray-300 text-center tracking-wide leading-6 ${inView ? 'show-animate' : ''}`}>
                                 <img loading='lazy' className="mx-auto" width={62} height={55} src={frontend} alt="frontend" />
                                 <h4 className="font-mono font-extrabold tracking-wider text-2xl text-yellow-500">
                                     Back-End Development
@@ -67,7 +67,7 @@ const Services = () => {
                 <div className="flex md:flex-row flex-col gap-14 md:gap-4 mt-4">
                     <InView triggerOnce={false} threshold={threshold}>
                         {({ inView, ref }) => (
-                            <div ref={ref} className={`animate-from-right tech  w-1/2 md:w-full mx-auto hover:bg-yellow-200 hover:text-green-800 transition duration-500 rounded-lg p-2 text-gray-300 text-center tracking-wide leading-6 ${inView ? 'show-animate' : ''}`}>
+                            <div ref={ref} className={`animate-from-right tech  md:w-1/2 w-full mx-auto hover:bg-yellow-200 hover:text-green-800 transition duration-500 rounded-lg p-2 text-gray-300 text-center tracking-wide leading-6 ${inView ? 'show-animate' : ''}`}>
                                 <img loading='lazy' className="mx-auto" width={62} height={55} src={ecommerce} alt="ecommerce" />
                                 <h4 className="font-mono font-extrabold tracking-wider text-2xl text-yellow-500">
                                     E-Commerce Solutions
@@ -82,7 +82,7 @@ const Services = () => {
 
                     <InView triggerOnce={false} threshold={threshold}>
                         {({ inView, ref }) => (
-                            <div ref={ref} className={`animate-from-left tech w-1/2 md:w-full mx-auto hover:bg-yellow-200 hover:text-green-800 transition duration-500 rounded-lg p-2 text-gray-300 text-center tracking-wide leading-6 ${inView ? 'show-animate' : ''}`}>
+                            <div ref={ref} className={`animate-from-left tech md:w-1/2 w-full mx-auto hover:bg-yellow-200 hover:text-green-800 transition duration-500 rounded-lg p-2 text-gray-300 text-center tracking-wide leading-6 ${inView ? 'show-animate' : ''}`}>
                                 <img loading='lazy' className="mx-auto" width={62} height={55} src={webopt} alt="webopt" />
                                 <h4 className="font-mono font-extrabold tracking-wider text-2xl text-yellow-500">
                                     Website Maintenance and Optimization

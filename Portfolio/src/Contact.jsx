@@ -17,17 +17,17 @@ const Contact = () => {
           <form className='form ' onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="name">Name</label>
-              <input type="text" name="name" id='name ' placeholder='Enter your name ' className='form-control' />
+              <input type="text" autoComplete='true' name="name" id='name ' placeholder='Enter your name ' className='form-control' />
               <ValidationError
-                prefix="Email"
-                field="email"
+                prefix="name"
+                field="name"
                 errors={state.errors}
               />
             </div>
 
             <div className="form-group">
               <label htmlFor="Email">Email</label>
-              <input type="email" name="email" id='Email' placeholder='Enter your e-mail' className='form-control' />
+              <input type="email" autoComplete='true' name="email" id='Email' placeholder='Enter your e-mail' className='form-control' />
               <ValidationError
                 prefix="Email"
                 field="email"
@@ -37,10 +37,10 @@ const Contact = () => {
 
             <div className="form-group">
               <label htmlFor="Message">Message</label>
-              <input type="textarea" name="message" id='Message' placeholder='Write your message here' className='form-control' />
+              <input type="textarea" autoComplete='true' name="message" id='Message' placeholder='Write your message here' className='form-control' />
               <ValidationError
-                prefix="Email"
-                field="email"
+                prefix="message"
+                field="message"
                 errors={state.errors}
               />
 

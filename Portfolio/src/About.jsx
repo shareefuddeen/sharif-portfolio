@@ -44,7 +44,7 @@ const About = () => {
             <h1 className='font-mono text-yellow-500 '>Software Engineering </h1>
             <p className='font-sans text-xl tracking-wider  font-bold'>As a software engineer and web developer, I specialize in designing and developing high-performance, scalable, and user-friendly applications.</p>
           </div>
-          <img loading='lazy' src={img2} className='mx-auto rounded-md w-1/2 h-1/2' alt="Software engineering" />
+          <img loading='lazy' src={img2} className='mx-auto rounded-md w-full' alt="Software engineering" />
         </div>
       </div>
 
